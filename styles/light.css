@@ -1,9 +1,9 @@
 :root.theme-light {
-  --bg-image: url('../images/cover-image-light.png');
-  --bg-color: #F1B2CE;
-  --logo-color: #FFC2E6; 
-  --accent-color: #FF8DCB;
-  --main-text-color: #353430; 
+  --bg-image: url("../images/cover-image-light.png");
+  --bg-color: #f1b2ce;
+  --logo-color: #ffc2e6;
+  --accent-color: #ff8dcb;
+  --main-text-color: #353430;
   --contrast-text-color: #353430;
   --section-title-color: #353430;
 }
@@ -14,10 +14,10 @@
 
 @media (prefers-color-scheme: light) {
   :root.theme-auto {
-    --bg-image: url('../images/cover-image-light.png');
-    --bg-color: #F1B2CE;
-    --logo-color: #FFC2E6;
-    --accent-color: #FF8DCB;
+    --bg-image: url("../images/cover-image-light.png");
+    --bg-color: #f1b2ce;
+    --logo-color: #ffc2e6;
+    --accent-color: #ff8dcb;
     --main-text-color: #353430;
     --contrast-text-color: #353430;
     --section-title-color: #353430;

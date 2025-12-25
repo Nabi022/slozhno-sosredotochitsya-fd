@@ -353,10 +353,7 @@
 
   .section.section--problems .section__block {
     grid-column: auto;
-    grid-row: 2;
-  }
-
-  .section.section--problems .section__block {
     grid-column: span 1;
+    grid-row: 2;
   }
 }
