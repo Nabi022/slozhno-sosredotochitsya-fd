@@ -352,7 +352,6 @@
   }
 
   .section.section--problems .section__block {
-    grid-column: auto;
     grid-column: span 1;
     grid-row: 2;
   }
