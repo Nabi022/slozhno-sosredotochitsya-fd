@@ -103,8 +103,7 @@
 }
 
 .header__theme-menu-button:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .header__theme-menu-button:focus {
@@ -171,13 +170,16 @@
   margin-bottom: 0;
 }
 
-.section__subtitle {
+.section__subtitle,
+.section__subsubtitle {
   margin-bottom: var(--inline-gap);
+}
+
+.section__subtitle {
   font-size: var(--section-title-size);
 }
 
 .section__subsubtitle {
-  margin-bottom: var(--inline-gap);
   font-weight: var(--font-weight-regular);
 }
 
@@ -197,8 +199,8 @@
 }
 
 .section__text-link:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  border-bottom: 1px solid var(--main-text-color);
+  text-decoration: none;
 }
 
 .section__text-link:focus-visible {
@@ -213,6 +215,7 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  object-position: center;
 }
 
 .section__gallery-grid {
@@ -237,11 +240,6 @@
 }
 
 @media (min-width: 768px) {
-  :root {
-    --page-padding: 20px;
-    --section-gap: 80px;
-  }
-
   .header__title {
     margin-left: -20px;
     font-size: var(--header-font-size);
@@ -249,7 +247,7 @@
 
   .header__subtitle {
     justify-self: end;
-    width: 364px;
+    max-width: 364px;
   }
 
   .section:not(.section--gallery) {
@@ -315,11 +313,6 @@
 }
 
 @media (min-width: 1024px) {
-  :root {
-    --page-padding: 20px;
-    --section-gap: 80px;
-  }
-
   .header__theme-menu {
     justify-self: center;
     align-self: start;
@@ -329,12 +322,8 @@
     flex-direction: row;
   }
 
-  .header__title {
-    font-size: var(--header-font-size);
-  }
-
   .header__subtitle {
-    width: 491px;
+    max-width: 491px;
   }
 
   .section:not(.section--gallery, .section--problems) {
@@ -346,13 +335,12 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .section.section--problems .section__title {
-    grid-column: 1;
+  .section--problems .section__title {
+    grid-column: 1 / -1;
     grid-row: 1;
   }
 
-  .section.section--problems .section__block {
+  .section--problems .section__block {
     grid-column: span 1;
-    grid-row: 2;
   }
 }

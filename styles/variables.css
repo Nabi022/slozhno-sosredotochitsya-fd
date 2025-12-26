@@ -20,3 +20,17 @@
   --inline-gap: 10px;
   --header-text-shadow: 4px 4px 0 var(--accent-color);
 }
+
+@media (min-width: 768px) {
+  :root {
+    --page-padding: 20px;
+    --section-gap: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --page-padding: 20px;
+    --section-gap: 80px;
+  }
+}
