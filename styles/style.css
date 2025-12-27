@@ -103,7 +103,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--button-border-color);
 }
 
 .header__theme-menu-button:focus {
@@ -111,7 +111,8 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  outline: 1px solid rgba(255, 0, 112, 0.4);
+  box-shadow: 0 0 0 1px
+    color-mix(in srgb, currentColor 40%, transparent);
 }
 
 /* HEADER CONTENT */

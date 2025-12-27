@@ -6,6 +6,7 @@
   --main-text-color: #353430;
   --contrast-text-color: #353430;
   --section-title-color: #353430;
+  --button-border-color: #353430;
 }
 
 :root.theme-light .header__rec {
